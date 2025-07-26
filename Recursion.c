@@ -68,12 +68,6 @@ int countDigits(int n) {
     return 1 + countDigits(n / 10);
 }
 
-// 11. Count zeros in a number
-int countZeros(int n) {
-    if (n == 0) return 0;
-    return (n % 10 == 0 ? 1 : 0) + countZeros(n / 10);
-}
-
 // 12. Check if number is prime
 bool isPrime(int n, int i) {
     if (n <= 2) return (n == 2);
