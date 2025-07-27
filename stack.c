@@ -95,3 +95,17 @@ for(int i=top; i>=0; i--)
 printf("\n");
     }
 }
+/*
+======== Output ========
+10 pushed to stack
+20 pushed to stack
+30 pushed to stack
+Stack Elements are: 30	20	10
+popped value: 30
+Top element: 20
+Stack Elements are: 20	10
+popped value: 20
+popped value: 10
+Underflow
+*/
+
