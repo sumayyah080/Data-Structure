@@ -73,7 +73,7 @@ for(int i=top; i>=0; i--)
 printf("\n");
     }
 } 
-Int main() 
+int main() 
 {
     push(10);
     push(20);
