@@ -4,31 +4,6 @@
 int queue[MAX];
 int front = -1, rear = -1;
 
-int isEmpty();
-int isFull();
-void enqueue(int value);
-void dequeue();
-void peek();
-void display();
-
-int main()
-{
-    enqueue(10);
-    enqueue(20);
-    enqueue(30);
-    display();       // Shows all elements
-
-    dequeue();       // Removes 10
-    peek();          // Shows front element: 20
-    display();       // Shows 20 and 30
-
-    dequeue();       // Removes 20
-    dequeue();       // Removes 30
-    dequeue();       // Underflow (queue is empty)
-
-    return 0;
-}
-
 // Checks if the queue is empty
 int isEmpty()
 {
@@ -104,6 +79,23 @@ void display()
         }
         printf("\n");
     }
+}
+int main()
+{
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    display();       // Shows all elements
+
+    dequeue();       // Removes 10
+    peek();          // Shows front element: 20
+    display();       // Shows 20 and 30
+
+    dequeue();       // Removes 20
+    dequeue();       // Removes 30
+    dequeue();       // Underflow (queue is empty)
+
+    return 0;
 }
 /*10 enqueued to queue
 20 enqueued to queue
