@@ -2,28 +2,6 @@
 #define MAX 100
 int stack[MAX];
 int top=-1;
-int isEmpty();
-int isFull();
-void push(int value);
-void pop();
-void peek();
-void display();
-int main()
-{
-    push(10);
-    push(20);
-    push(30);
-    display(); //should show
-
-    pop();
-    peek();
-    display();
-
-    pop();
-    pop();
-    pop(); //should show underflow
-    return 0;
-}
 //checking if stack is empty
 int isEmpty()
 {
@@ -94,6 +72,22 @@ for(int i=top; i>=0; i--)
 }
 printf("\n");
     }
+} 
+Int main() 
+{
+    push(10);
+    push(20);
+    push(30);
+    display(); //should show
+
+    pop();
+    peek();
+    display();
+
+    pop();
+    pop();
+    pop(); //should show underflow
+    return 0;
 }
 /*
 ======== Output ========
